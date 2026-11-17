@@ -28,9 +28,9 @@ function deleteLast() {
     updateDisplay();
 }
 
-function calculate() {
+function calculatePercentage() {
     try {
-        currentInput = eval(currentInput).toString();
+        currentInput = (eval(currentInput) / 100).toString();
         updateDisplay();
     } catch (error) {
         currentInput = 'Error';
